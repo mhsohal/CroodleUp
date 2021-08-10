@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croodle Up</title>
+    <!-- Bootstrap CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Fontawesome CDN link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Responsive CSS link -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Main CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start Header Area -->
+    <section class="header shadow" id="header">
+        <div class="container-fluid hPadding">
+            <!-- 1st Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light py-0 bg-white">
+                <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav border menuSearch p-0 mr-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link drop-center dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span><i class="fas fa-house-user"></i></span> Bangalore
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav drop-center text-center menu ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partner up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                    <div class="menuIcon d-flex justify-content-center align-items-center mlIcon">
+                        <div class="profileIcon">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-user"></i>
+                                        <p class="m-0 mt-1">Profile</p>
+                                        <div class="notifyArea">
+                                            <span class="notify">2</span>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="profileHover">
+                                    <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuButton">
+                                        <div class="seperator user wBg">
+                                            <h4 class="dropdown-item">Welcome</h4>
+                                            <div class="d-flex dropdown-item justify-content-between align-items-center">
+                                                <div class="userInfo">
+                                                    <h6>John Smith</h6>
+                                                    <p style="font-size: 12px">johnsmith.23@gmail.com</p>
+                                                    <a href="#" class="rText">Edit Account <i class="fas fa-caret-right"></i></a>
+                                                </div>
+                                                <div class="userImg">
+                                                    <img src="image/smith-1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="seperator">
+                                            <a class="dropdown-item" href="#">My Directory</a>
+                                            <a class="dropdown-item" href="#">My Orders</a>
+                                            <a class="dropdown-item" href="#">My Coupons</a>
+                                            <a class="dropdown-item" href="#">My Wishlist</a>
+                                        </div>
+                                        <div class="">
+                                            <a class="dropdown-item" href="#">My Payment</a>
+                                            <a class="dropdown-item" href="#">My Addresses</a>
+                                            <div class="d-flex">
+                                                <a class="dropdown-item" href="#">My Notifications</a>
+                                                <span class="notify">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cartIcon">
+                            <div class="d-flex flex-column justify-content-center align-items-center menuActive">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p class="m-0 mt-1">Cart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid px-0">
+            <!-- 2nd Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light rBg hPadding menuTwo">
+                <button class="navbar-toggler ml-auto mr-0 mr-md-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse px-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Business Listing</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Product Listing</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Events</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Coupons</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Finance</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="mx-2">Documents</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- End Header Area -->
+
+    <!-- Strat Event Banner -->
+    <section class="eBanner3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/event3banner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 text-left">
+                                <h2>Microlight Flying in Bangalore</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p class="m-0 ml-2">Bangalore, Karnataka <i class="fas fa-circle" style="font-size: 5px"></i> Adventure</p>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <i class="far fa-star oText"></i>
+                                    <p class="m-0 mx-2"><span class="oText">3.5</span> (234 Reviews) </p>
+                                    <p class="m-0"><i class="fas fa-circle" style="font-size: 5px"></i> +10 Booking in last hour</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex text-left mt-3 mt-lg-0">
+                                <button type="button" class="btn rBg text-white px-2 px-md-4 mr-2">Book Now</button>
+                                <button type="button" class="btn text-white border">Add to favourite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/event3banner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 text-left">
+                                <h2>Microlight Flying in Bangalore</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p class="m-0 ml-2">Bangalore, Karnataka <i class="fas fa-circle" style="font-size: 5px"></i> Adventure</p>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <i class="far fa-star oText"></i>
+                                    <p class="m-0 mx-2"><span class="oText">3.5</span> (234 Reviews) </p>
+                                    <p class="m-0"><i class="fas fa-circle" style="font-size: 5px"></i> +10 Booking in last hour</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex text-left mt-3 mt-lg-0">
+                                <button type="button" class="btn rBg text-white px-2 px-md-4 mr-2">Book Now</button>
+                                <button type="button" class="btn text-white border">Add to favourite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/event3banner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 text-left">
+                                <h2>Microlight Flying in Bangalore</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p class="m-0 ml-2">Bangalore, Karnataka <i class="fas fa-circle" style="font-size: 5px"></i> Adventure</p>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <i class="far fa-star oText"></i>
+                                    <p class="m-0 mx-2"><span class="oText">3.5</span> (234 Reviews) </p>
+                                    <p class="m-0"><i class="fas fa-circle" style="font-size: 5px"></i> +10 Booking in last hour</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex text-left mt-3 mt-lg-0">
+                                <button type="button" class="btn rBg text-white px-2 px-md-4 mr-2">Book Now</button>
+                                <button type="button" class="btn text-white border">Add to favourite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Event Banner -->
+
+    <!-- Start Microlight Flying Informations -->
+    <section class="microlight tb_Padding">
+        <div class="containerSm bdBottom">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">All</a></li>
+                            <li class="breadcrumb-item"><a href="#">Events</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Bangalore</li>
+                            <li class="breadcrumb-item active" aria-current="page">Microlight Flying in Bangalore</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="tInfo bdBottom pb-4">
+                        <div class="inner">
+                            <div class="innerTitle">
+                                <h4 class="m-0">Basic informations</h4>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-calendar"></i>
+                            <p class="m-0 ml-2">Earliest available - Tomorrow</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle"></i>
+                            <p class="m-0 ml-2">Instant booking</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-history"></i>
+                            <p class="m-0 ml-2">Free cancellation</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="far fa-bookmark"></i>
+                            <p class="m-0 ml-2">Show mobile or printed voucher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 mt-lg-0 text-left">
+                    <div class="bookNow">
+                        <h4><span class="rText">₹3,500 </span> / Person</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-calendar"></i>
+                            <p class="m-0 ml-2">Earliest available - Tomorrow</p>
+                        </div>
+                        <button type="button" class="btn btn-block rBg text-white mt-4">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-lg-9">
+                    <div class="inner">
+                        <div class="innerTitle">
+                            <h4 class="m-0">About the experience</h4>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-left">
+                        <p>Get to ride a beautiful microlight flyer over the dazzling scenery of Bangalore.With a certified pilot at hand, you’ll be playing as the co-pilot as you soar over the region’s famous greens.Enjoy magnificent views of the city at a height of 4,000 feet in the air</p>
+                        <a href="#" class="rText">View more...</a>
+                    </div>
+                    <div class="ticketInfo rounded wBg p-4 text-left">
+                        <div>
+                            <h6>Ticket inclusive of</h6>
+                            <ul class="ml-3">
+                                <li>Entry fee</li>
+                                <li>Morning Breakfast</li>
+                                <li>Parachute Advance (Refundable)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Terms and conditions</h6>
+                            <ul class="ml-3">
+                                <li>Children aged 0-15 must be accompanied by an adult aged 18+ at all times.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <div class="inner">
+                            <div class="innerTitle">
+                                <h4 class="m-0">How do I reach there</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746840.952815596!2d88.10068738205693!3d23.495631769977344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1623077874496!5m2!1sen!2sbd" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="button" class="btn rText btnMap">Explore in maps</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Microlight Flying Informations -->
+
+    <!-- Start Sight seeing Area -->
+    <section class="container-fluid">
+        <div class="tb_Padding">
+            <div class="containerSm">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="inner">
+                            <div class="innerTitle">
+                                <h3 class="m-0">Similar Activities in Bangalore</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mLeft">
+                <div class="row monsoonJs">
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card boxBd">
+                            <img src="image/Image5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="tBoxL">
+                                        <h4>Water surfing in Goa</h4>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2">North Goa - Karnataka</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <p class="m-0 ml-2"><span>3.5</span> (234 Reviews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="tBoxR">
+                                        <p class="m-0">₹1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sight seeing Area -->
+
+    <!-- Start Footer Area -->
+    <section class="footer">
+        <div class="fTop py-5">
+            <div class="container-fluid containerSm hPadding">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4 text-center px-0 text-md-left">
+                        <ul class="list-group">
+                            <li class="list-group-item  font-weight-bold"><a href="#">HELP</a></li>
+                            <li class="list-group-item"><a href="#">FAQ</a></li>
+                            <li class="list-group-item"><a href="#">24/7 Customer Support</a></li>
+                            <li class="list-group-item"><a href="#">Terms and Conditions</a></li>
+                            <li class="list-group-item"><a href="#">Privacy</a></li>
+                            <li class="list-group-item"><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 text-center px-0 text-md-left">
+                        <ul class="list-group">
+                            <li class="list-group-item font-weight-bold"><a href="#">CROODLE UP</a></li>
+                            <li class="list-group-item"><a href="#">Partner Up</a></li>
+                            <li class="list-group-item"><a href="#">About Us</a></li>
+                            <li class="list-group-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 text-center px-0 text-md-left">
+                        <ul class="list-group">
+                            <li class="list-group-item mr-auto">
+                                <a href="#">
+                                    <span class="d-flex">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                    <p class="m-0 ml-3">croodleup@gmail.com</p>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item mr-auto">
+                                <a href="#">
+                                    <span class="d-flex justify-content-between">
+                                    <i class="fas fa-phone-alt fa-2x"></i>
+                                    <p class="m-0 ml-3">+919141133678</p>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fBottom py-3 bg-white">
+            <div class="container-fluid containerSm hPadding">
+                <div class="row align-items-center text-center">
+                    <div class="col-sm-12 col-md-6 mb-md-0 text-md-left">
+                        <div class="social">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-md-right mb-md-0">
+                        <p class="m-0 text-lg-right text-danger">From Ezio Tech Solution
+                            <br>Version 1.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer Area -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

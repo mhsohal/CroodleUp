@@ -1,0 +1,170 @@
+@media only screen and (min-width: 1200px){
+    .hPadding{
+        padding: 0 130px;
+    }
+    form.menuSearch{
+        width: 50%;
+        margin-right: auto;
+    }
+    .mLeft{
+        margin-left: 125px;
+    }
+    .tBrandContent{
+        margin-left: 145px;
+    }
+    .bannerText{
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .containerSm{
+        max-width: 90%;
+        padding: 0px 15px;
+        margin: auto !important;
+        text-align: center;
+    }
+    .monsoonIn .mLeft{
+        margin-left: 15px;
+    }
+    .tBrandContent{
+        margin-left: 25px;
+    }
+    .grabContent{
+        margin-left: 10px;
+    }
+    .bannerText{
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .appText p {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+   }
+}
+
+@media only screen and (max-width: 768px){
+    form.menuSearch{
+        width: 100%;
+    }
+    .bannerText{
+        left: 50%;
+        width: 80%;
+    }
+    .listMenu{
+        width: 80%;
+    }
+    .dealContent{
+        margin-left: 10px;
+    }
+    .grabContent{
+        margin-left: 10px;
+    }
+    .appText p{
+        width: 60%;
+        margin: auto;
+    }
+    .w-30{
+        width: 100% !important;
+        margin-top: 20px !important;
+    } 
+    .pLwrap{
+        position: relative;
+        height: 30vh;
+    }
+    .pLwrap img{
+        height: 30vh;
+    }
+    .pLwrap .pLtext{
+        position: absolute;
+        top: 20% !important;
+        left: 10%;
+        width: 75% !important;
+    }
+    .bookingWrap{
+        top: 20% !important;
+    }
+    img.barCode{
+        width: 35% !important;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .listMenu{
+        top: 105%;
+    }
+}
+
+@media (max-width: 576px) {
+    .searchBar {
+        position: absolute;
+    }
+    .searchFrom {
+        padding-left: 40px;
+    }
+    .drop-center {
+        text-align: center;
+    }
+    .w_100{
+        width: 100% !important;
+    }
+    .listMenu.event1{
+        top: 75% !important;
+        width: 90% !important;
+    }
+    .about{
+        margin-top: 100px;
+    }
+    .btnMap{
+        padding: 5px 50px !important;
+    }
+    .tSelect{
+        height: 76vh !important;
+    }
+    .bookingWrap{
+        top: 30% !important;
+    }
+    img.barCode{
+        width: 50% !important;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 576px) {
+    .menu-horizontal {
+        overflow: auto;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .menuSearch {
+        margin-top: 15px;
+    }
+    .menu {
+        text-align: center;
+    }
+    .searchBar {
+        position: absolute;
+    }
+    .searchFrom {
+        padding-left: 40px;
+    }
+    .profile-icon {
+        margin-left: 6rem !important;
+    }
+    .pro-m {
+        padding: 0 15px;
+    }
+    .drop-center {
+        text-align: center;
+    }
+    .margin_r{
+        margin-right: 10px;
+    }
+}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
